@@ -2,6 +2,20 @@
 
 ![](/assets/exports-definition.png)
 
+####exports使用
+
+```
+foo.js:
+exports.a = function(){
+    console.log('a')
+}
+exports.a = 1 
+ 
+test.js
+var x = require('./foo');
+console.log(x.a); // 1
+```
+
 ####module.exports与exports的区别
 
 注意：每一个node.js执行文件，都自动创建一个module对象，同时，module对象会创建一个叫exports的属性，初始化的值是 {}
