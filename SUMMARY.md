@@ -2,4 +2,5 @@
 
 * [Node简介](README.md)
 * [Node特点](chapter1.md)
+  * [NPM](chapter1/npm.md)
 
