@@ -5,13 +5,13 @@
 ####exports使用
 
 ```
-foo.js:
+===>foo.js:
 exports.a = function(){
     console.log('a')
 }
 exports.a = 1 
  
-test.js
+===>test.js
 var x = require('./foo');
 console.log(x.a); // 1
 ```
