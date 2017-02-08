@@ -1,6 +1,6 @@
 # Node介绍
 
-####1.Node.js不是JS应用、而是JS运行平台
+####Node.js不是JS应用、而是JS运行平台
 
 * **Node.js采用C++语言编写而成，是一个Javascript的运行环境。**
 * Node.js采用了Google Chrome浏览器的V8引擎，性能很好。
