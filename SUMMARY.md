@@ -1,5 +1,5 @@
 # Summary
 
-* [Node介绍](README.md)
-* [First Chapter](chapter1.md)
+* [Node简介](README.md)
+* [Node特点](chapter1.md)
 

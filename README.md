@@ -1,4 +1,4 @@
-# Node介绍
+# Node简介
 
 ####Node.js不是JS应用、而是JS运行平台
 
