@@ -31,7 +31,13 @@ $ node
 |　setInterval|　方法| 计时器相关 |
 |　clearInterval|　方法| 计时器相关 |
 
+```
+console.log(__filename);
+// /Users/liuht/example.js
 
+console.log(__dirname);
+// /Users/liuht
+```
 
 
 
