@@ -44,5 +44,32 @@ D:\node_modules;
 7. 如果继续失败，循环第1至6个步骤，直到module path中的最后一个值。
 8. 如果仍然失败，则抛出异常。
 
+####4.Node.js模块与前端模块的异同
 
+* Node.js将JavaScript文件载入到最终的执行中，进行了包装，使得每个文件中的变量天然的形成在一个闭包之中，不会污染全局变量。
+* 浏览器端则通常是裸露的JavaScript代码片段（浏览器端通过script标签的载入JavaScript文件）。
 
+所以为了解决前后端一致性的问题，类库开发者需要将类库代码包装在一个闭包内。以下代码片段抽取自著名类库underscore的定义方式（注意，```this```是浏览器环境下的```window```对象）。
+
+```
+(function () {
+    // Establish the root object, `window` in the browser, or `global` on the server.
+    var root = this;
+    var _ = function (obj) {
+            return new wrapper(obj);
+        };
+    if (typeof exports !== 'undefined') {
+        if (typeof module !== 'undefined' && module.exports) {
+            exports = module.exports = _; // 把module.exports赋值给exports
+        }
+        exports._ = _;
+    } else if (typeof define === 'function' && define.amd) {
+        // Register as a named module with AMD.
+        define('underscore', function () {
+            return _;
+        });
+    } else {
+        root['_'] = _;
+    }
+}).call(this);
+```
