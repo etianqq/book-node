@@ -3,7 +3,9 @@
 ![](/assets/exports-definition.png)
 
 ####exports使用
+导出的是一个模块**对象**。
 
+使用时，必定都是```obj.xxx```格式。
 ```
 ===>foo.js:
 exports.a = function(){
