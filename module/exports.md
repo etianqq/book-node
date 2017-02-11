@@ -18,6 +18,8 @@ var x = require('./foo');
 console.log(x.a); // 1
 ```
 ####module.exports使用
+导出的是任何合法的**一个JavaScript基本数据类型/对象** - boolean，number，date，JSON， string，function，array和其他。
+
 
 module.export =View, 即相当于导出整个view对象。外面模块调用它的时候，能够调用View的所有方法。不过需要注意，只有是View的静态方法的时候，才能够被调用，prototype创建的方法，则属于View的私有方法。
 
