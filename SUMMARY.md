@@ -8,4 +8,5 @@
   * [模块载入](module/require.md)
   * [exports](module/exports.md)
   * [package.json](module/package.json.md)
+* [事件机制](event.md)
 
