@@ -21,10 +21,10 @@ Gitbook: [https://etianqq.github.io/book-node/](https://etianqq.github.io/book-n
 
 其他书籍：
 
-* [HTTP讲义](https://etianqq.github.io/book-http/)
 * [Javascript简明讲义](https://etianqq.github.io/book-jstips/)
-* [Angular 1.0讲义](https://etianqq.github.io/book-angular/)
+* [HTTP讲义](https://etianqq.github.io/book-http/)
 * [VUE2.0讲义](https://etianqq.github.io/book-vue2/)
+* [Angular 1.0讲义](https://etianqq.github.io/book-angular/)
 
 #### Debug
 
