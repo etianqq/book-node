@@ -1,0 +1,390 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Node简介 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="chapter1.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Node简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="chapter1.html">
+            
+                <a href="chapter1.html">
+            
+                    
+                    Node特点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="chapter1/npm.html">
+            
+                <a href="chapter1/npm.html">
+            
+                    
+                    NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="chapter1/global.html">
+            
+                <a href="chapter1/global.html">
+            
+                    
+                    global对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="module.html">
+            
+                <a href="module.html">
+            
+                    
+                    模块机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="module/require.html">
+            
+                <a href="module/require.html">
+            
+                    
+                    模块载入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="module/exports.html">
+            
+                <a href="module/exports.html">
+            
+                    
+                    exports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="module/package.json.html">
+            
+                <a href="module/package.json.html">
+            
+                    
+                    package.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="event.html">
+            
+                <a href="event.html">
+            
+                    
+                    事件机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="event/node-event-loop.html">
+            
+                <a href="event/node-event-loop.html">
+            
+                    
+                    Event loop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Node简介</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="node&#x7B80;&#x4ECB;">Node&#x7B80;&#x4ECB;</h1>
+<h4 id="nodejs&#x4E0D;&#x662F;js&#x5E94;&#x7528;&#x3001;&#x800C;&#x662F;js&#x8FD0;&#x884C;&#x5E73;&#x53F0;">Node.js&#x4E0D;&#x662F;JS&#x5E94;&#x7528;&#x3001;&#x800C;&#x662F;JS&#x8FD0;&#x884C;&#x5E73;&#x53F0;</h4>
+<ul>
+<li><strong>Node.js&#x91C7;&#x7528;C++&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x800C;&#x6210;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;Javascript&#x7684;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x3002;</strong></li>
+<li>Node.js&#x91C7;&#x7528;&#x4E86;Google Chrome&#x6D4F;&#x89C8;&#x5668;&#x7684;V8&#x5F15;&#x64CE;&#xFF0C;&#x6027;&#x80FD;&#x5F88;&#x597D;&#x3002;</li>
+<li>&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x7CFB;&#x7EDF;&#x7EA7;&#x7684;API&#xFF0C;&#x5982;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x3001;&#x7F51;&#x7EDC;&#x7F16;&#x7A0B;&#x7B49;</li>
+</ul>
+<p>&#x6700;&#x7B80;&#x5355;&#x7684;&#x8FD0;&#x884C;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code># node helloworld.js
+</code></pre><p>&#x5907;&#x6CE8;&#xFF1A;
+Javascript&#x662F;&#x4E00;&#x79CD;&#x811A;&#x672C;&#x8BED;&#x8A00;&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x89E3;&#x91CA;&#x5668;&#x6765;&#x8FD0;&#x884C;&#x3002;&#x4E00;&#x822C;&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x5305;&#x542B;&#x4E86;Javascript&#x5F15;&#x64CE;&#xFF0C;&#x5176;&#x4E13;&#x95E8;&#x8D1F;&#x8D23;&#x89E3;&#x91CA;&#x6267;&#x884C;&#x7F51;&#x9875;&#x4E2D;&#x7684;Javascript&#x4EE3;&#x7801;&#x3002;</p>
+<p>&#x6709;&#x4E86;Node&#xFF0C;Javascript&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x975E;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x73AF;&#x5883;&#x4E0B;&#x8FD0;&#x884C;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x7CFB;&#x7EDF;&#x7EA7;&#x6216;&#x8005;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;Javascript&#x4EE3;&#x7801;&#xFF0C;&#x4EA4;&#x7ED9;Node.js&#x6765;&#x89E3;&#x91CA;&#x6267;&#x884C;&#x3002;</p>
+<h4 id="&#x7535;&#x5B50;&#x4E66;">&#x7535;&#x5B50;&#x4E66;</h4>
+<p>Gitbook: <a href="https://etianqq.github.io/book-node/" target="_blank">https://etianqq.github.io/book-node/</a></p>
+<p>&#x5176;&#x4ED6;&#x4E66;&#x7C4D;&#xFF1A;</p>
+<ul>
+<li><a href="https://etianqq.github.io/book-http/" target="_blank">HTTP&#x8BB2;&#x4E49;</a></li>
+<li><a href="https://etianqq.github.io/book-jstips/" target="_blank">Javascript&#x7B80;&#x660E;&#x8BB2;&#x4E49;</a></li>
+<li><a href="https://etianqq.github.io/book-angular/" target="_blank">Angular 1.0&#x8BB2;&#x4E49;</a></li>
+<li><a href="https://etianqq.github.io/book-vue2/" target="_blank">VUE2.0&#x8BB2;&#x4E49;</a></li>
+</ul>
+<h4 id="debug">Debug</h4>
+<ul>
+<li><code>gitbook build</code></li>
+<li><code>gitbook serve</code></li>
+<li>&#x6253;&#x5F00; <a href="http://localhost:4000" target="_blank">http://localhost:4000</a></li>
+</ul>
+<h4 id="&#x53D1;&#x5E03;">&#x53D1;&#x5E03;</h4>
+<ul>
+<li><code>gitbook build</code></li>
+<li><code>npm run deploy</code></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="chapter1.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Node特点">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Node简介","level":"1.1","depth":1,"next":{"title":"Node特点","level":"1.2","depth":1,"path":"chapter1.md","ref":"chapter1.md","articles":[{"title":"NPM","level":"1.2.1","depth":2,"path":"chapter1/npm.md","ref":"chapter1/npm.md","articles":[]},{"title":"global对象","level":"1.2.2","depth":2,"path":"chapter1/global.md","ref":"chapter1/global.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-09-20T07:43:33.944Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-20T07:43:56.868Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
