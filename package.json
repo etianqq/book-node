@@ -1,0 +1,27 @@
+{
+  "name": "book-node",
+  "version": "1.0.0",
+  "description": "node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "node_modules/.bin/gulp deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etianqq/book-node.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "etianqq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/etianqq/book-node/issues"
+  },
+  "homepage": "https://github.com/etianqq/book-node#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.5.4"
+  }
+}

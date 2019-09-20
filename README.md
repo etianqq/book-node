@@ -15,6 +15,24 @@ Javascript是一种脚本语言，必须通过解释器来运行。一般，浏�
 
 有了Node，Javascript就可以在非浏览器的环境下运行，比如，可以编写系统级或者服务器端的Javascript代码，交给Node.js来解释执行。
 
-####参考文章
+#### 电子书
 
-[深入浅出Node.js](http://www.infoq.com/cn/search.action?queryString=%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BANode.js&page=1&searchOrder=&sst=3b0KBHeocYm8x0ym)
+Gitbook: [https://etianqq.github.io/book-node/](https://etianqq.github.io/book-node/)
+
+其他书籍：
+
+* [HTTP讲义](https://etianqq.github.io/book-http/)
+* [Javascript简明讲义](https://etianqq.github.io/book-jstips/)
+* [Angular 1.0讲义](https://etianqq.github.io/book-angular/)
+* [VUE2.0讲义](https://etianqq.github.io/book-vue2/)
+
+#### Debug
+
+* `gitbook build`
+* `gitbook serve`
+* 打开 [http://localhost:4000](http://localhost:4000)
+
+#### 发布
+
+* `gitbook build`
+* `npm run deploy`
